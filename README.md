@@ -21,7 +21,7 @@ It also supports running ADRecon and auditing the results if you find yourself w
 
 Since the AWPEC PowerShell script relies on various 3rd party tools, which are known for being flagged by AV, we have to either disable antivirus or actively bypass AMSI. Furthermore, as we utilize `PowerSharpPack`, which reflectively loads C# code, we must ensure to bypass AMSI .NET as well. A basic AMSI PS bypass is not sufficient!
 
-So open a low-priv PowerShell terminal session, bypass AMSI and then run the PS script:
+So open a low-priv PowerShell terminal session, bypass AMSI (PS + .NET) and then run the PS script:
 
 ````powershell
 # run the AWPEC script
